@@ -1,0 +1,8 @@
+#do google image search, ctrl+f12
+enter in console
+
+
+const scroll = setInterval(function() { 
+  window.scrollTo(0, document.body.scrollHeight);
+  document.querySelector("#islmp > div > div > div > div.gBPM8 > div.qvfT1 > div.YstHxe > input").click();
+ }, 100);
