@@ -1,0 +1,2 @@
+# print file count in each folder of current directory(https://stackoverflow.com/a/45133411)
+for f in */; do echo "$f -> $(ls $f | wc -l)"; done
