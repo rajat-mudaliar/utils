@@ -1,2 +1,5 @@
 # print file count in each folder of current directory(https://stackoverflow.com/a/45133411)
 for f in */; do echo "$f -> $(ls $f | wc -l)"; done
+
+#delete all jpg files
+find . -type f -iname \*.jpg -delete (https://askubuntu.com/a/104841)
