@@ -3,3 +3,6 @@ for f in */; do echo "$f -> $(ls $f | wc -l)"; done
 
 #delete all jpg files
 find . -type f -iname \*.jpg -delete (https://askubuntu.com/a/104841)
+
+#recursively copy all files of same extension to another folder
+find . -name '*.jpg' | xargs cp -t Pictures2/
