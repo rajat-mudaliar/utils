@@ -9,3 +9,6 @@ find . -name '*.jpg' | xargs cp -t Pictures2/
 
 #print all unique extensions in folder recursively with count
 ls -1R | sed 's/[^\.]*//' | sed 's/.*\.//' | sort | uniq -c
+
+#prepend rec_ to all file names in directory
+for f in *.png; do mv "$f" "rec_$f"; done
