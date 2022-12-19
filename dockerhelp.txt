@@ -1,0 +1,5 @@
+###Change time in docker container
+# Change the docker default timezone from UTC to SGT
+echo "Asia/Singapore" > /etc/timezone
+dpkg-reconfigure tzdata
+date
