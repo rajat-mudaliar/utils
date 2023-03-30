@@ -15,3 +15,6 @@ for f in *.png; do mv "$f" "rec_$f"; done
 
 # move all files in directory to another directory
 find /path/to/source_directory -maxdepth 1 -type f -print0 | xargs -0 mv -t /path/to/destination_directory
+
+# move all images starting with date_ to date folder
+find . -maxdepth 1 -type f -name '210323_*' -print0 | xargs -0 mv -t 210323/
