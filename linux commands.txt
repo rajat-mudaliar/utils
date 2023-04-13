@@ -18,3 +18,6 @@ find /path/to/source_directory -maxdepth 1 -type f -print0 | xargs -0 mv -t /pat
 
 # move all images starting with date_ to date folder
 find . -maxdepth 1 -type f -name '210323_*' -print0 | xargs -0 mv -t 210323/
+
+# append prefix 190323_ to all file names
+rename 's/^/190323_/' /path/to/directory/*
