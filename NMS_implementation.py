@@ -1,3 +1,4 @@
+#author= https://blog.roboflow.com/how-to-code-non-maximum-suppression-nms-in-plain-numpy/
 #NMS implementation
 def box_iou_batch(boxes_a: np.ndarray, boxes_b: np.ndarray) -> np.ndarray:
     def box_area(box):
