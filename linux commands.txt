@@ -21,3 +21,6 @@ find . -maxdepth 1 -type f -name '210323_*' -print0 | xargs -0 mv -t 210323/
 
 # append prefix 190323_ to all file names
 rename 's/^/190323_/' /path/to/directory/*
+
+#mount ubuntu machine to another machine on same network 
+sudo sshfs -o allow_other,default_permissions ncrb@192.168.1.2:/ /mnt1
